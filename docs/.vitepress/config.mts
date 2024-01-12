@@ -2,6 +2,7 @@ import { defineConfig } from "vitepress"
 import type { DefaultTheme } from "vitepress"
 import fs from "node:fs"
 import path from "node:path"
+
 // https://vitepress.dev/reference/site-config
 
 // 读取/interview/*文件夹下所有的文件返回item[]
@@ -94,6 +95,7 @@ export default defineConfig({
 		},
 		socialLinks: [{ icon: "github", link: "https://github.com/huxiguo" }],
 	},
+	vite: {},
 })
 
 function sidebarInterview(): DefaultTheme.SidebarItem[] {

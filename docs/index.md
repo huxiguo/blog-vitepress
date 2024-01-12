@@ -56,6 +56,6 @@ features:
   --vp-button-brand-bg:#722ed1;
   --vp-button-brand-hover-bg:#531dab;
   --vp-button-brand-active-bg:#391085;
+  --vp-c-indigo-1:#30a46c;
   }
 </style>
-
