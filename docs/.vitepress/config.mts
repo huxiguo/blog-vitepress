@@ -5,10 +5,14 @@ import path from "node:path"
 // https://vitepress.dev/reference/site-config
 
 // 读取/interview/*文件夹下所有的文件返回item[]
-const interviewHtmlItem = getSideBarItem("html")
-const interviewCssItem = getSideBarItem("css")
-const interviewCodeItem = getSideBarItem("code")
-const interviewJsItem = getSideBarItem("js")
+const interviewHtmlItem = getInterviewSideBarItem("html")
+const interviewCssItem = getInterviewSideBarItem("css")
+const interviewCodeItem = getInterviewSideBarItem("code")
+const interviewJsItem = getInterviewSideBarItem("js")
+
+// leetcode 文件夹
+
+const leetcodeItem = getLeetcodeSideBarItem()
 
 export default defineConfig({
 	title: "blog",
@@ -26,6 +30,21 @@ export default defineConfig({
 		// * 搜索
 		search: {
 			provider: "local",
+			options: {
+				translations: {
+					button: {
+						buttonText: "搜索文档",
+						buttonAriaLabel: "搜索文档",
+					},
+					modal: {
+						footer: {
+							selectText: "选择",
+							navigateText: "切换",
+							closeText: "关闭",
+						},
+					},
+				},
+			},
 		},
 		// * 右侧导航
 		outline: {
@@ -35,6 +54,23 @@ export default defineConfig({
 		footer: {
 			message: "Released under the MIT License.",
 			copyright: "Copyright © 2024-present seek hoo",
+		},
+		// * 编辑页面
+		editLink: {
+			pattern: "https://github.com/huxiguo/blog-vitepress/edit/main/docs/:path",
+			text: "编辑此页",
+		},
+		lastUpdated: {
+			text: "最新更新于",
+			formatOptions: {
+				dateStyle: "full",
+				timeStyle: "long",
+				hourCycle: "h23",
+			},
+		},
+		docFooter: {
+			prev: "上一页",
+			next: "下一页",
 		},
 		nav: [
 			{ text: "首页", link: "/" },
@@ -50,10 +86,11 @@ export default defineConfig({
 					// { text: "Node", link: `/interview/node/${interviewCssItem[0].link}` },
 				],
 			},
-			{ text: "测试路由", link: "/markdown-examples" },
+			{ text: "leetcode", link: `/leetcode/${leetcodeItem[0].link}` },
 		],
 		sidebar: {
 			"/interview/": { base: "/interview/", items: sidebarInterview() },
+			"/leetcode/": { base: "/leetcode/", items: sidebarLeetcode() },
 		},
 		socialLinks: [{ icon: "github", link: "https://github.com/huxiguo" }],
 	},
@@ -107,6 +144,17 @@ function sidebarInterview(): DefaultTheme.SidebarItem[] {
 	]
 }
 
+function sidebarLeetcode(): DefaultTheme.SidebarItem[] {
+	return [
+		{
+			text: "leetcode",
+			collapsed: true,
+			base: "/leetcode/",
+			items: leetcodeItem,
+		},
+	]
+}
+
 // 读取interview/html目录下的文件返回数组
 
 interface Item {
@@ -119,7 +167,7 @@ interface Item {
  * @param directory
  * @returns
  */
-function getSideBarItem(directory: string): Item[] {
+function getInterviewSideBarItem(directory: string): Item[] {
 	const itemList: Item[] = []
 	const dir = path.resolve(__dirname, `../interview/${directory}`)
 	fs.readdirSync(dir).map((file) => {
@@ -128,8 +176,12 @@ function getSideBarItem(directory: string): Item[] {
 	})
 	return itemList
 }
-
-/**
- * TODO vite
- * ? 为什么vite打包后使用fs操作读取的文件还在，不会出现路径错误？
- */
+function getLeetcodeSideBarItem(): Item[] {
+	const itemList: Item[] = []
+	const dir = path.resolve(__dirname, `../leetcode/`)
+	fs.readdirSync(dir).map((file) => {
+		const name = path.basename(file, ".md")
+		itemList.push({ text: name, link: name })
+	})
+	return itemList
+}
