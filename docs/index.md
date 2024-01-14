@@ -13,28 +13,28 @@ hero:
     alt: challenges
   actions:
     - theme: brand
+      text: 计算机基础
+      link: /
+    - theme: alt
       text: 高频面试题
       link: /interview/html/Cookie与Session
     - theme: alt
-      text: JavaScript
-      link: /
-    - theme: alt
-      text: HTML
-      link: /
-    - theme: alt
-      text: CSS
-      link: /
-    - theme: alt
       text: Leetcode
-      link: /leetcode
+      link: /leetcode/maximum-split-of-positive-even-integers
+    - theme: alt
+      text: 前端工程化
+      link: /
+    - theme: alt
+      text: 前端部署
+      link: /leecode
+    - theme: alt
+      text: 全栈开发
+      link: /
     - theme: alt
       text: Vue
       link: /
     - theme: alt
-      text: Node
-      link: /
-    - theme: alt
-      text: Node
+      text: React
       link: /
 
 features:
@@ -56,6 +56,7 @@ features:
   --vp-button-brand-bg:#722ed1;
   --vp-button-brand-hover-bg:#531dab;
   --vp-button-brand-active-bg:#391085;
+  /* --vp-c-indigo-1:lab(72.7377% 33.9074 77.3632); // 橙色 */
   --vp-c-indigo-1:#30a46c;
   }
 </style>

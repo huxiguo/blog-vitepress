@@ -6,7 +6,7 @@ onMounted(() => {
 	script.src = "https://utteranc.es/client.js"
 	script.async = true
 	script.crossOrigin = "anonymous"
-	script.setAttribute("repo", "johanazhu/fe")
+	script.setAttribute("repo", "huxiguo/blog-vitepress")
 	script.setAttribute("issue-term", "pathname")
 	script.setAttribute("label", "Comment")
 	script.setAttribute("theme", "preferred-color-scheme")
