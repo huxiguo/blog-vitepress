@@ -49,6 +49,10 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
+<script>
+  console.log('hello world')
+</script>
+
 <style>
   :root{
     --vp-home-hero-name-color: transparent;

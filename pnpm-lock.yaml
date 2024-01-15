@@ -16,6 +16,9 @@ devDependencies:
   vitepress:
     specifier: 1.0.0-rc.36
     version: 1.0.0-rc.36(@algolia/client-search@4.22.1)(@types/node@20.11.0)(search-insights@2.13.0)
+  vitepress-plugin-nprogress:
+    specifier: ^0.0.4
+    version: 0.0.4
 
 packages:
 
@@ -808,6 +811,10 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
+  /nprogress@0.2.0:
+    resolution: {integrity: sha1-y480xTIT2JVyP8urkH6UIq28r7E=}
+    dev: true
+
   /picocolors@1.0.0:
     resolution: {integrity: sha512-1fygroTLlHu66zi26VoTDv8yRgm0Fccecssto+MhsZ0D/DGW2sm8E8AjW7NU5VVTRt5GxbeZ5qBuJr+HyLYkjQ==}
 
@@ -915,6 +922,12 @@ packages:
       rollup: 4.9.4
     optionalDependencies:
       fsevents: 2.3.3
+    dev: true
+
+  /vitepress-plugin-nprogress@0.0.4:
+    resolution: {integrity: sha512-YzW36kBnjuFH91DOFIA5snyBf4WpF/cYfhAiyNefhqif8QQIKGsbpzvI8VN0M8RHLGr9iQyHhF7dQsm//Xf5Hw==}
+    dependencies:
+      nprogress: 0.2.0
     dev: true
 
   /vitepress@1.0.0-rc.36(@algolia/client-search@4.22.1)(@types/node@20.11.0)(search-insights@2.13.0):

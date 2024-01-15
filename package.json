@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "vitepress": "1.0.0-rc.36"
+    "vitepress": "1.0.0-rc.36",
+    "vitepress-plugin-nprogress": "^0.0.4"
   },
   "scripts": {
     "dev": "vitepress dev docs",
