@@ -23,7 +23,6 @@ export function sidebarInterview(): DefaultTheme.SidebarItem[] {
 		{
 			text: "html",
 			collapsed: true,
-			docFooterText: "0000000000",
 			base: "/interview/html/",
 			items: interviewHtmlItem,
 		},
@@ -72,4 +71,10 @@ export function sidebarInterview(): DefaultTheme.SidebarItem[] {
 	]
 }
 
-export { interviewCodeItem, interviewCssItem, interviewHtmlItem, interviewJsItem, interviewNetworkItem }
+export {
+	interviewCodeItem,
+	interviewCssItem,
+	interviewHtmlItem,
+	interviewJsItem,
+	interviewNetworkItem,
+}

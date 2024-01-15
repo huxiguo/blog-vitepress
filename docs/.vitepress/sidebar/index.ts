@@ -11,6 +11,9 @@ import {
 // leetcode 目录sidebar
 import { leetcodeItem, sidebarLeetcode } from "./leetcodeSidebar"
 
+// 计算机基础
+import { computerBaseGitItem, sidebarComputerBase } from "./computerBaseSidebar"
+
 export {
 	interviewCodeItem,
 	interviewCssItem,
@@ -20,4 +23,6 @@ export {
 	sidebarInterview,
 	leetcodeItem,
 	sidebarLeetcode,
+	computerBaseGitItem,
+	sidebarComputerBase,
 }

@@ -11,7 +11,10 @@ import {
 	sidebarInterview,
 	leetcodeItem,
 	sidebarLeetcode,
+	computerBaseGitItem,
+	sidebarComputerBase,
 } from "./sidebar"
+console.log(computerBaseGitItem)
 
 export default defineConfig({
 	title: "aaaaaaa",
@@ -76,7 +79,10 @@ export default defineConfig({
 		// * head 导航栏
 		nav: [
 			{ text: "首页", link: "/" },
-			{ text: "计算机基础", link: "/" },
+			{
+				text: "计算机基础",
+				items: [{ text: "git", link: `/computerBase/git/${computerBaseGitItem[0].link}` }],
+			},
 			{
 				text: "高频面试题",
 				items: [
@@ -91,7 +97,21 @@ export default defineConfig({
 				],
 			},
 			{ text: "leetcode", link: `/leetcode/${leetcodeItem[0].link}` },
-			{ text: "前端工程化", link: "/" },
+			{
+				text: "前端工程化",
+				items: [
+					{
+						text: "webpack",
+						items: [
+							{ text: "初级", link: "/webpack/primary" },
+							{ text: "初级", link: "/webpack/primary" },
+							{ text: "初级", link: "/webpack/primary" },
+							{ text: "初级", link: "/webpack/primary" },
+						],
+					},
+					{ text: "vite", link: "/" },
+				],
+			},
 			{ text: "前端部署", link: "/" },
 			{ text: "全栈开发", link: "/" },
 		],
@@ -101,6 +121,8 @@ export default defineConfig({
 			"/interview/": { base: "/interview/", items: sidebarInterview() },
 			// * leetcode
 			"/leetcode/": { base: "/leetcode/", items: sidebarLeetcode() },
+			// * 计算机基础
+			"/computerBase/": { base: "/computerBase/", items: sidebarComputerBase() },
 		},
 		socialLinks: [{ icon: "github", link: "https://github.com/huxiguo" }],
 	},

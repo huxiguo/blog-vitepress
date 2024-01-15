@@ -59,7 +59,9 @@ const { page } = data
 
 <style>
 :root {
-	--vp-c-indigo-1: #30a46c;
+	--vp-c-indigo-1: var(--vp-c-green-1);
+	--vp-c-indigo-2: var(--vp-c-green-2);
+	--vp-c-indigo-3: var(--vp-c-green-3);
 }
 ::view-transition-old(root),
 ::view-transition-new(root) {

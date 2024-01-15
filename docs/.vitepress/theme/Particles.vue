@@ -2,7 +2,6 @@
 import { onMounted } from "vue"
 import addScript from "../utils/addParticles"
 onMounted(() => {
-	console.log(".......")
 	addScript("/js/particles.js")
 })
 </script>
