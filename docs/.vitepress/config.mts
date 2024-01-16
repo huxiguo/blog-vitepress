@@ -14,7 +14,6 @@ import {
 	computerBaseGitItem,
 	sidebarComputerBase,
 } from "./sidebar"
-console.log(computerBaseGitItem)
 
 export default defineConfig({
 	title: "aaaaaaa",
@@ -81,16 +80,33 @@ export default defineConfig({
 			{ text: "首页", link: "/" },
 			{
 				text: "计算机基础",
-				items: [{ text: "git", link: `/computerBase/git/${computerBaseGitItem[0].link}` }],
+				items: [
+					{
+						text: "git",
+						link: `/computerBase/git/${computerBaseGitItem[0].link}`,
+					},
+				],
 			},
 			{
 				text: "高频面试题",
 				items: [
-					{ text: "HTML", link: `/interview/html/${interviewHtmlItem[0].link}` },
+					{
+						text: "HTML",
+						link: `/interview/html/${interviewHtmlItem[0].link}`,
+					},
 					{ text: "CSS", link: `/interview/css/${interviewCssItem[0].link}` },
-					{ text: "JavaScript", link: `/interview/js/${interviewJsItem[0].link}` },
-					{ text: "Code", link: `/interview/code/${interviewCodeItem[0].link}` },
-					{ text: "Network", link: `/interview/network/${interviewNetworkItem[0].link}` },
+					{
+						text: "JavaScript",
+						link: `/interview/js/${interviewJsItem[0].link}`,
+					},
+					{
+						text: "Code",
+						link: `/interview/code/${interviewCodeItem[0].link}`,
+					},
+					{
+						text: "Network",
+						link: `/interview/network/${interviewNetworkItem[0].link}`,
+					},
 					// { text: "Vue", link: `/interview/vue/${interviewCssItem[0].link}` },
 					// { text: "React", link: `/interview/react/${interviewCssItem[0].link}` },
 					// { text: "Node", link: `/interview/node/${interviewCssItem[0].link}` },
@@ -114,6 +130,7 @@ export default defineConfig({
 			},
 			{ text: "前端部署", link: "/" },
 			{ text: "全栈开发", link: "/" },
+			{ text: "其他", link: "/" },
 		],
 		// * 侧边栏,根据不同的路由配置
 		sidebar: {
@@ -122,7 +139,10 @@ export default defineConfig({
 			// * leetcode
 			"/leetcode/": { base: "/leetcode/", items: sidebarLeetcode() },
 			// * 计算机基础
-			"/computerBase/": { base: "/computerBase/", items: sidebarComputerBase() },
+			"/computerBase/": {
+				base: "/computerBase/",
+				items: sidebarComputerBase(),
+			},
 		},
 		socialLinks: [{ icon: "github", link: "https://github.com/huxiguo" }],
 	},
