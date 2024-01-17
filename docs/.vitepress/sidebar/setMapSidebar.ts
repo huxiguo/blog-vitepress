@@ -41,5 +41,15 @@ export function sidebarSetMap(): DefaultTheme.SidebarItem[] {
 			base: "/set-map/WeakMap/",
 			items: weakMapItem,
 		},
+		{
+			text: "总结",
+			base: "/set-map/",
+			link: "/总结",
+		},
+		{
+			text: "测试题",
+			base: "/set-map/",
+			link: "/测试题",
+		},
 	]
 }
