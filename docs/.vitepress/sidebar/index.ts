@@ -14,6 +14,9 @@ import { leetcodeItem, sidebarLeetcode } from "./leetcodeSidebar"
 // 计算机基础
 import { computerBaseGitItem, sidebarComputerBase } from "./computerBaseSidebar"
 
+// set map
+import { sidebarSetMap } from "./setMapSidebar"
+
 export {
 	interviewCodeItem,
 	interviewCssItem,
@@ -25,4 +28,5 @@ export {
 	sidebarLeetcode,
 	computerBaseGitItem,
 	sidebarComputerBase,
+	sidebarSetMap,
 }

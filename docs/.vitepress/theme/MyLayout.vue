@@ -62,6 +62,10 @@ const { page } = data
 	--vp-c-indigo-1: var(--vp-c-green-1);
 	--vp-c-indigo-2: var(--vp-c-green-2);
 	--vp-c-indigo-3: var(--vp-c-green-3);
+	--vp-c-indigo-soft: rgba(48, 164, 108, 0.14);
+}
+.custom-block blockquote {
+	color: var(--vp-c-text-3) !important;
 }
 ::view-transition-old(root),
 ::view-transition-new(root) {

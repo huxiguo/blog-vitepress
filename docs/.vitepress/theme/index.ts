@@ -13,5 +13,6 @@ export default {
 	enhanceApp: (ctx) => {
 		vitepressNprogress(ctx)
 		ClickAnimation()
+		const { app } = ctx
 	},
 }

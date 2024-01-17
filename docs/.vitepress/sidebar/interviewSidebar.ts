@@ -15,8 +15,17 @@ function getInterviewSideBarItem(directory: string): Item[] {
 const interviewHtmlItem = getInterviewSideBarItem("../../interview/html")
 const interviewCssItem = getInterviewSideBarItem("../../interview/css")
 const interviewCodeItem = getInterviewSideBarItem("../../interview/code")
-const interviewJsItem = getInterviewSideBarItem("../../interview/js")
+let interviewJsItem = getInterviewSideBarItem("../../interview/js")
 const interviewNetworkItem = getInterviewSideBarItem("../../interview/network")
+
+// 修改interviewJsItem中 'set和map'的link
+interviewJsItem = interviewJsItem.map((item) => {
+	if (item.text === "set和map") {
+		item.link = "/set基本使用"
+		item.base = "/set-map/set"
+	}
+	return item
+})
 
 export function sidebarInterview(): DefaultTheme.SidebarItem[] {
 	return [

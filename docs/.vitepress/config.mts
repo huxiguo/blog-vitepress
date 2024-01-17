@@ -13,10 +13,11 @@ import {
 	sidebarLeetcode,
 	computerBaseGitItem,
 	sidebarComputerBase,
+	sidebarSetMap,
 } from "./sidebar"
 
 export default defineConfig({
-	title: "aaaaaaa",
+	title: "攻城狮",
 	description: "my study blog",
 	// * 显示修改时间
 	lastUpdated: true,
@@ -143,8 +144,13 @@ export default defineConfig({
 				base: "/computerBase/",
 				items: sidebarComputerBase(),
 			},
+			"/set-map/": {
+				base: "/set-map/",
+				items: sidebarSetMap(),
+			},
 		},
 		socialLinks: [{ icon: "github", link: "https://github.com/huxiguo" }],
 	},
 	vite: {},
+	vue: {},
 })

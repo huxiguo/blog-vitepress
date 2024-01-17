@@ -49,12 +49,6 @@ features:
     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
 
-
-
-<script>
-  
-</script>
-
 <style>
   :root{
     --vp-home-hero-name-color: transparent;
@@ -66,3 +60,4 @@ features:
   --vp-c-indigo-1:#30a46c;
   }
 </style>
+
