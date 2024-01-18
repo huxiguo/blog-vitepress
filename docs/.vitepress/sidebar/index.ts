@@ -17,6 +17,12 @@ import { computerBaseGitItem, sidebarComputerBase } from "./computerBaseSidebar"
 // set map
 import { sidebarSetMap } from "./setMapSidebar"
 
+// es6 es
+import { sidebarEs } from "./esSidebar"
+
+// es6 var
+import { sidebarVar } from "./varSidebar"
+
 export {
 	interviewCodeItem,
 	interviewCssItem,
@@ -29,4 +35,6 @@ export {
 	computerBaseGitItem,
 	sidebarComputerBase,
 	sidebarSetMap,
+	sidebarEs,
+	sidebarVar,
 }

@@ -14,6 +14,8 @@ import {
 	computerBaseGitItem,
 	sidebarComputerBase,
 	sidebarSetMap,
+	sidebarEs,
+	sidebarVar,
 } from "./sidebar"
 
 export default defineConfig({
@@ -147,6 +149,14 @@ export default defineConfig({
 			"/set-map/": {
 				base: "/set-map/",
 				items: sidebarSetMap(),
+			},
+			"/es6/es": {
+				base: "/es6/es/",
+				items: sidebarEs(),
+			},
+			"/es6/varLetConst": {
+				base: "/es6/varLetConst/",
+				items: sidebarVar(),
 			},
 		},
 		socialLinks: [{ icon: "github", link: "https://github.com/huxiguo" }],
