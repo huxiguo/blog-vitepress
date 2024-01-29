@@ -23,6 +23,9 @@ import { sidebarEs } from "./esSidebar"
 // es6 var
 import { sidebarVar } from "./varSidebar"
 
+// es6 Destructuring_assignment
+import { sidebarDestructuring_assignment } from "./destructuring_assignmentSidebar"
+
 export {
 	interviewCodeItem,
 	interviewCssItem,
@@ -37,4 +40,5 @@ export {
 	sidebarSetMap,
 	sidebarEs,
 	sidebarVar,
+	sidebarDestructuring_assignment,
 }

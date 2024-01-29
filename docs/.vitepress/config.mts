@@ -16,6 +16,7 @@ import {
 	sidebarSetMap,
 	sidebarEs,
 	sidebarVar,
+	sidebarDestructuring_assignment,
 } from "./sidebar"
 
 export default defineConfig({
@@ -103,6 +104,10 @@ export default defineConfig({
 						link: `/interview/js/${interviewJsItem[0].link}`,
 					},
 					{
+						text: "Es6",
+						link: `/interview/es6/什么是ES`,
+					},
+					{
 						text: "Code",
 						link: `/interview/code/${interviewCodeItem[0].link}`,
 					},
@@ -157,6 +162,10 @@ export default defineConfig({
 			"/es6/varLetConst": {
 				base: "/es6/varLetConst/",
 				items: sidebarVar(),
+			},
+			"/es6/destructuring_assignment": {
+				base: "/es6/destructuring_assignment/",
+				items: sidebarDestructuring_assignment(),
 			},
 		},
 		socialLinks: [{ icon: "github", link: "https://github.com/huxiguo" }],

@@ -43,21 +43,24 @@ export function sidebarInterview(): DefaultTheme.SidebarItem[] {
 			base: "/interview/es6/",
 			items: [
 				{ text: "什么是ES", link: "什么是ES" },
-				{ text: "定义变量", link: "varletconst" },
+				{ text: "定义变量", base: "/es6/varLetConst/", link: "变量和常量" },
 				{ text: "Symbol", link: "symbol" },
 				{ text: "BigInt", link: "BigInt" },
 				{ text: "模板字符串", link: "模板字符串" },
 				{ text: "箭头函数", link: "箭头函数" },
 				{
 					text: "对象字面量增强",
-
 					link: "对象字面量增强",
 				},
-				{ text: "解构赋值", link: "解构赋值" },
+				{
+					text: "解构赋值",
+					base: "/es6/destructuring_assignment/",
+					link: "解构赋值是什么",
+				},
 				{ text: "默认参数", link: "默认参数" },
 				{ text: "剩余参数", link: "剩余参数" },
 				{ text: "展开运算符", link: "展开运算符" },
-				{ text: "set和map", link: "set和map" },
+				{ text: "set和map", base: "/es6/es/", link: "什么是es" },
 				{ text: "class和继承", link: "class和继承" },
 				{
 					text: "字符串数组对象的新增方法",
