@@ -59,7 +59,7 @@ export function sidebarInterview(): DefaultTheme.SidebarItem[] {
 				},
 				{ text: "默认参数", link: "默认参数" },
 				{ text: "剩余参数", link: "剩余参数" },
-				{ text: "展开运算符", link: "展开运算符" },
+				{ text: "展开运算符", base: "/es6/spread/", link: "数组的展开运算符" },
 				{ text: "set和map", base: "/es6/es/", link: "什么是es" },
 				{ text: "class和继承", link: "class和继承" },
 				{

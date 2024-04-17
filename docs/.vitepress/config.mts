@@ -17,6 +17,9 @@ import {
 	sidebarEs,
 	sidebarVar,
 	sidebarDestructuring_assignment,
+	sidebarSpread,
+	sidebarMiniprogram,
+	miniprogramItem,
 } from "./sidebar"
 
 export default defineConfig({
@@ -136,6 +139,7 @@ export default defineConfig({
 					{ text: "vite", link: "/" },
 				],
 			},
+			{ text: "微信小程序", link: `/miniprogram/${miniprogramItem[0].link}` },
 			{ text: "前端部署", link: "/" },
 			{ text: "全栈开发", link: "/" },
 			{ text: "其他", link: "/" },
@@ -146,6 +150,8 @@ export default defineConfig({
 			"/interview/": { base: "/interview/", items: sidebarInterview() },
 			// * leetcode
 			"/leetcode/": { base: "/leetcode/", items: sidebarLeetcode() },
+			// miniprogram
+			"/miniprogram/": { base: "/miniprogram/", items: sidebarMiniprogram() },
 			// * 计算机基础
 			"/computerBase/": {
 				base: "/computerBase/",
@@ -166,6 +172,10 @@ export default defineConfig({
 			"/es6/destructuring_assignment": {
 				base: "/es6/destructuring_assignment/",
 				items: sidebarDestructuring_assignment(),
+			},
+			"/es6/spread": {
+				base: "/es6/spread/",
+				items: sidebarSpread(),
 			},
 		},
 		socialLinks: [{ icon: "github", link: "https://github.com/huxiguo" }],

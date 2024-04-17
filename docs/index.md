@@ -36,6 +36,9 @@ hero:
     - theme: alt
       text: React
       link: /
+    - theme: alt
+      text: 微信小程序
+      link: /miniprogram
 
 features:
   - title: Feature A

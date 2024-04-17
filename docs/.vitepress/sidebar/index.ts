@@ -26,6 +26,11 @@ import { sidebarVar } from "./varSidebar"
 // es6 Destructuring_assignment
 import { sidebarDestructuring_assignment } from "./destructuring_assignmentSidebar"
 
+import { sidebarSpread } from "./spreadSidebar"
+
+// Miniprogram
+import { sidebarMiniprogram, miniprogramItem } from "./miniprogramSidebar"
+
 export {
 	interviewCodeItem,
 	interviewCssItem,
@@ -41,4 +46,7 @@ export {
 	sidebarEs,
 	sidebarVar,
 	sidebarDestructuring_assignment,
+	sidebarSpread,
+	sidebarMiniprogram,
+	miniprogramItem,
 }
