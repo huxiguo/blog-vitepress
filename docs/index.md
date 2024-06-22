@@ -39,6 +39,9 @@ hero:
     - theme: alt
       text: 微信小程序
       link: /miniprogram
+    - theme: alt
+      text: HarmonyOS
+      link: /harmonyOS
 
 features:
   - title: Feature A

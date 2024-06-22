@@ -20,6 +20,7 @@ import {
 	sidebarSpread,
 	sidebarMiniprogram,
 	miniprogramItem,
+	sidebarHarmonyOS,
 } from "./sidebar"
 
 export default defineConfig({
@@ -140,9 +141,22 @@ export default defineConfig({
 				],
 			},
 			{ text: "微信小程序", link: `/miniprogram/${miniprogramItem[0].link}` },
-			{ text: "前端部署", link: "/" },
-			{ text: "全栈开发", link: "/" },
-			{ text: "其他", link: "/" },
+			{ text: "前端部署", link: "/q" },
+			{ text: "全栈开发", link: "/w" },
+			{ text: "其他", link: "/q" },
+			{
+				text: "HarmonyOS",
+				items: [
+					{
+						text: "初级认证",
+						link: "/harmonyOS/certification/beginner/index",
+					},
+					{
+						text: "中级认证",
+						link: "/harmonyOS/certification/intermediate/index",
+					},
+				],
+			},
 		],
 		// * 侧边栏,根据不同的路由配置
 		sidebar: {
@@ -176,6 +190,10 @@ export default defineConfig({
 			"/es6/spread": {
 				base: "/es6/spread/",
 				items: sidebarSpread(),
+			},
+			"/harmonyOS/certification": {
+				base: "/harmonyOS/certification/",
+				items: sidebarHarmonyOS(),
 			},
 		},
 		socialLinks: [{ icon: "github", link: "https://github.com/huxiguo" }],

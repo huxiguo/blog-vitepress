@@ -31,6 +31,9 @@ import { sidebarSpread } from "./spreadSidebar"
 // Miniprogram
 import { sidebarMiniprogram, miniprogramItem } from "./miniprogramSidebar"
 
+// HarmonyOS
+import { sidebarHarmonyOS } from "./harmonyOSSidebar"
+
 export {
 	interviewCodeItem,
 	interviewCssItem,
@@ -49,4 +52,5 @@ export {
 	sidebarSpread,
 	sidebarMiniprogram,
 	miniprogramItem,
+	sidebarHarmonyOS,
 }
