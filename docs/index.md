@@ -21,21 +21,21 @@ hero:
     - theme: alt
       text: Leetcode
       link: /leetcode/maximum-split-of-positive-even-integers
-    - theme: alt
-      text: 前端工程化
-      link: /
-    - theme: alt
-      text: 前端部署
-      link: /leecode
-    - theme: alt
-      text: 全栈开发
-      link: /
-    - theme: alt
-      text: Vue
-      link: /
-    - theme: alt
-      text: React
-      link: /
+    # - theme: alt
+    #   text: 前端工程化
+    #   link: /
+    # - theme: alt
+    #   text: 前端部署
+    #   link: /leecode
+    # - theme: alt
+    #   text: 全栈开发
+    #   link: /
+    # - theme: alt
+    #   text: Vue
+    #   link: /
+    # - theme: alt
+    #   text: React
+    #   link: /
     - theme: alt
       text: 微信小程序
       link: /miniprogram

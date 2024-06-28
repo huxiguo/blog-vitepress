@@ -144,19 +144,19 @@ export default defineConfig({
 				],
 			},
 			{ text: "leetcode", link: `/leetcode/${leetcodeItem[0].link}` },
-			{
-				text: "前端工程化",
-				items: [
-					{
-						text: "webpack",
-						items: [{ text: "初级", link: "/webpack/primary" }],
-					},
-					{ text: "vite", link: "/c" },
-				],
-			},
+			// {
+			// 	text: "前端工程化",
+			// 	items: [
+			// 		{
+			// 			text: "webpack",
+			// 			items: [{ text: "初级", link: "/webpack/primary" }],
+			// 		},
+			// 		{ text: "vite", link: "/c" },
+			// 	],
+			// },
 			{ text: "微信小程序", link: `/miniprogram/${miniprogramItem[0].link}` },
-			{ text: "前端部署", link: "/q" },
-			{ text: "全栈开发", link: "/w" },
+			// { text: "前端部署", link: "/q" },
+			// { text: "全栈开发", link: "/w" },
 			{
 				text: "HarmonyOS",
 				items: [
