@@ -57,7 +57,7 @@ features:
 
 <style>
   :root{
-    --vp-home-hero-name-color: transparent;
+  --vp-home-hero-name-color: transparent;
   --vp-home-hero-name-background: -webkit-linear-gradient(120deg, #bd34fe 30%, #41d1ff);
   --vp-home-hero-image-background-image: linear-gradient(-45deg, #bd34fe 50%, #47caff 50%);
   --vp-button-brand-bg:#722ed1;
@@ -67,15 +67,42 @@ features:
   --vp-c-indigo-1:#30a46c;
   --vp-home-hero-image-filter: blur(44px);
   }
-  @media (min-width: 640px) {
+  
+@media (min-width: 640px) {
   :root {
     --vp-home-hero-image-filter: blur(56px);
   }
 }
-
 @media (min-width: 960px) {
   :root {
     --vp-home-hero-image-filter: blur(68px);
+  }
+}
+:deep(.image-src) {
+  position: absolute;
+  top: 50%;
+  /*rtl:ignore*/
+  left: 50%;
+  max-width: 192px;
+  max-height: 192px;
+  border-radius: 96px;
+  /*rtl:ignore*/
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 640px) {
+  :deep(.image-src) {
+    max-width: 256px;
+    max-height: 256px;
+    border-radius: 128px;
+  }
+}
+
+@media (min-width: 960px) {
+  :deep(.image-src) {
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: 160px;
   }
 }
 
