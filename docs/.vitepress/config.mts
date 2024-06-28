@@ -24,6 +24,24 @@ import {
 } from "./sidebar"
 
 export default defineConfig({
+	sitemap: {
+		hostname: "https://blog.seekhoo.cn",
+	},
+	head: [
+		["link", { rel: "icon", href: "/favicon.ico" }],
+		["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
+		[
+			"link",
+			{ rel: "preconnect", href: "https://fonts.gstatic.com", crossorigin: "" },
+		],
+		[
+			"link",
+			{
+				href: "https://fonts.googleapis.com/css2?family=Roboto&display=swap",
+				rel: "stylesheet",
+			},
+		],
+	],
 	title: "攻城狮",
 	description: "my study blog",
 	// * 显示修改时间
@@ -35,6 +53,7 @@ export default defineConfig({
 		lineNumbers: true,
 	},
 	themeConfig: {
+		logo: "/ico.png",
 		// https://vitepress.dev/reference/default-theme-config
 		// * 搜索
 		search: {
@@ -130,20 +149,14 @@ export default defineConfig({
 				items: [
 					{
 						text: "webpack",
-						items: [
-							{ text: "初级", link: "/webpack/primary" },
-							{ text: "初级", link: "/webpack/primary" },
-							{ text: "初级", link: "/webpack/primary" },
-							{ text: "初级", link: "/webpack/primary" },
-						],
+						items: [{ text: "初级", link: "/webpack/primary" }],
 					},
-					{ text: "vite", link: "/" },
+					{ text: "vite", link: "/c" },
 				],
 			},
 			{ text: "微信小程序", link: `/miniprogram/${miniprogramItem[0].link}` },
 			{ text: "前端部署", link: "/q" },
 			{ text: "全栈开发", link: "/w" },
-			{ text: "其他", link: "/q" },
 			{
 				text: "HarmonyOS",
 				items: [
@@ -157,6 +170,7 @@ export default defineConfig({
 					},
 				],
 			},
+			{ text: "其他", link: "/q" },
 		],
 		// * 侧边栏,根据不同的路由配置
 		sidebar: {
