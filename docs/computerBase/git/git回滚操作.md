@@ -26,7 +26,7 @@
 
 `git reset [--hard | --soft | --mixed（默认值）] [HEAD（默认值） | commit-id | origin/远程分支 ] [path（默认值为全部文件）]`
 
-![sad](./img/reset.png)
+![sad](../img/reset.png)
 
 ## git revert
 
