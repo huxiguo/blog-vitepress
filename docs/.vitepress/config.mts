@@ -115,7 +115,7 @@ export default defineConfig({
 				],
 			},
 			{
-				text: "高频面试题",
+				text: "前端知识体系",
 				items: [
 					{
 						text: "HTML",

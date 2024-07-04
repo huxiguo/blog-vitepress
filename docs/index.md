@@ -16,7 +16,7 @@ hero:
       text: 计算机基础
       link: /
     - theme: alt
-      text: 高频面试题
+      text: 前端知识体系
       link: /interview/html/Cookie与Session
     - theme: alt
       text: Leetcode
