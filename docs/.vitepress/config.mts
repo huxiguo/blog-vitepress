@@ -143,7 +143,7 @@ export default defineConfig({
 					// { text: "Node", link: `/interview/node/${interviewCssItem[0].link}` },
 				],
 			},
-			{ text: "leetcode", link: `/leetcode/${leetcodeItem[0].link}` },
+			{ text: "算法与数据结构", link: `/leetcode/${leetcodeItem[0].link}` },
 			// {
 			// 	text: "前端工程化",
 			// 	items: [

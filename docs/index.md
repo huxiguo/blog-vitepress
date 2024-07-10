@@ -19,7 +19,7 @@ hero:
       text: 前端知识体系
       link: /interview/html/Cookie与Session
     - theme: alt
-      text: Leetcode
+      text: 算法与数据结构
       link: /leetcode/maximum-split-of-positive-even-integers
     # - theme: alt
     #   text: 前端工程化
