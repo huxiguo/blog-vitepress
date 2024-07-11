@@ -34,6 +34,8 @@ import { sidebarMiniprogram, miniprogramItem } from "./miniprogramSidebar"
 // HarmonyOS
 import { sidebarHarmonyOS } from "./harmonyOSSidebar"
 
+import { sidebarOther, otherInterviewItem, otherLiveItem } from "./otherSidebar"
+
 export {
 	interviewCodeItem,
 	interviewCssItem,
@@ -53,4 +55,7 @@ export {
 	sidebarMiniprogram,
 	miniprogramItem,
 	sidebarHarmonyOS,
+	sidebarOther,
+	otherInterviewItem,
+	otherLiveItem,
 }

@@ -21,6 +21,9 @@ import {
 	sidebarMiniprogram,
 	miniprogramItem,
 	sidebarHarmonyOS,
+	sidebarOther,
+	otherInterviewItem,
+	otherLiveItem,
 } from "./sidebar"
 
 export default defineConfig({
@@ -170,7 +173,19 @@ export default defineConfig({
 					},
 				],
 			},
-			{ text: "其他", link: "/q" },
+			{
+				text: "其他",
+				items: [
+					{
+						text: "面试总结",
+						link: `/other/interview/${otherInterviewItem[0].link}`,
+					},
+					{
+						text: "生活",
+						link: `/other/live/${otherLiveItem[0].link}`,
+					},
+				],
+			},
 		],
 		// * 侧边栏,根据不同的路由配置
 		sidebar: {
@@ -208,6 +223,10 @@ export default defineConfig({
 			"/harmonyOS/certification": {
 				base: "/harmonyOS/certification/",
 				items: sidebarHarmonyOS(),
+			},
+			"/other": {
+				base: "/other/",
+				items: sidebarOther(),
 			},
 		},
 		socialLinks: [{ icon: "github", link: "https://github.com/huxiguo" }],
