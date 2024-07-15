@@ -6,6 +6,7 @@ import {
 	interviewJsItem,
 	interviewNetworkItem,
 	sidebarInterview,
+	interviewEngineeringItem,
 } from "./interviewSidebar"
 
 // leetcode 目录sidebar
@@ -42,6 +43,7 @@ export {
 	interviewHtmlItem,
 	interviewJsItem,
 	interviewNetworkItem,
+	interviewEngineeringItem,
 	sidebarInterview,
 	leetcodeItem,
 	sidebarLeetcode,

@@ -7,41 +7,101 @@
   <title>Document</title>
   <style>
     .box {
-      display: flex;
-      flex-wrap: wrap;
+      /* grid 布局 */
+      display: grid;
+      /*  声明列的宽度  */
+      grid-template-columns: repeat(1, 100px 150px 200px);
+      /*  声明行间距和列间距  */
+      gap: 20px;
+      /*  声明行的高度  */
+      grid-template-rows: 100px 200px;
+      grid-template-areas: "a b c"
+        "d e f";
+
     }
 
-    .item1 {
-      flex: 1;
-      background-color: #a54444;
+    .one {
+      background: #19CAAD;
     }
 
-    .item2 {
-      flex: 1;
-      background-color: aqua;
+    .two {
+      background: #8CC7B5;
     }
 
-    .item3 {
-      flex: 1;
-      background-color: #236f7c;
+    .three {
+      background: #D1BA74;
     }
 
-    @media screen and (max-width: 768px) {
-      .box {
-        flex-direction: column;
-      }
+    .four {
+      background: #BEE7E9;
+    }
+
+    .five {
+      background: #E6CEAC;
+    }
+
+    .six {
+      background: #ECAD9E;
+    }
+
+    .item {
+      text-align: center;
+      font-size: 200%;
+      color: #fff;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      gap: 10px 10px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "dcsadc csdcs cdscs"
+        "ds dss ."
+        ". . .";
+    }
+
+    .dcsadc {
+      grid-area: dcsadc;
+    }
+
+    .csdcs {
+      grid-area: csdcs;
+    }
+
+    .cdscs {
+      grid-area: cdscs;
+    }
+
+    .ds {
+      grid-area: ds;
+    }
+
+    .dss {
+      grid-area: dss;
     }
   </style>
 </head>
 
 <body>
-  <h1>实现在大屏幕为一行三列，小屏幕为三行一列的布局</h1>
+  <span>title</span>
   <div class="box">
-    <div class="item1">1</div>
-    <div class="item2">2</div>
-    <div class="item3">3</div>
+    <div class="item one">1wewqeqweqwndqwdniosncodsncdsncjndcnsdkjcndksjcnskdncjsd</div>
+    <div class="item two">2</div>
+    <div class="item three">3</div>
+    <div class="item four">4</div>
+    <div class="item five">5</div>
+    <div class="item five">6</div>
   </div>
-
+  <span>title</span>
+  <div class="container">
+    <div class="dcsadc"></div>
+    <div class="csdcs"></div>
+    <div class="cdscs"></div>
+    <div class="ds"></div>
+    <div class="dss"></div>
+  </div>
 </body>
 
 </html>

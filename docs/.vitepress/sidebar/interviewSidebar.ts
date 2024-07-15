@@ -15,8 +15,11 @@ function getInterviewSideBarItem(directory: string): Item[] {
 const interviewHtmlItem = getInterviewSideBarItem("../../interview/html")
 const interviewCssItem = getInterviewSideBarItem("../../interview/css")
 const interviewCodeItem = getInterviewSideBarItem("../../interview/code")
-let interviewJsItem = getInterviewSideBarItem("../../interview/js")
+const interviewJsItem = getInterviewSideBarItem("../../interview/js")
 const interviewNetworkItem = getInterviewSideBarItem("../../interview/network")
+const interviewEngineeringItem = getInterviewSideBarItem(
+	"../../interview/engineering"
+)
 export function sidebarInterview(): DefaultTheme.SidebarItem[] {
 	return [
 		{
@@ -67,6 +70,8 @@ export function sidebarInterview(): DefaultTheme.SidebarItem[] {
 
 					link: "字符串数组对象的新增方法",
 				},
+
+				{ text: "模块系统", link: "模块系统" },
 				{ text: "Generator", link: "Generator" },
 				{ text: "Promise", link: "Promise" },
 				{
@@ -87,6 +92,12 @@ export function sidebarInterview(): DefaultTheme.SidebarItem[] {
 			collapsed: true,
 			base: "/interview/network/",
 			items: interviewNetworkItem,
+		},
+		{
+			text: "前端工程化",
+			collapsed: true,
+			base: "/interview/engineering/",
+			items: interviewEngineeringItem,
 		},
 		// {
 		// 	text: "vue",
@@ -115,4 +126,5 @@ export {
 	interviewHtmlItem,
 	interviewJsItem,
 	interviewNetworkItem,
+	interviewEngineeringItem,
 }

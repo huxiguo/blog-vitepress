@@ -24,6 +24,7 @@ import {
 	sidebarOther,
 	otherInterviewItem,
 	otherLiveItem,
+	interviewEngineeringItem,
 } from "./sidebar"
 
 export default defineConfig({
@@ -140,6 +141,10 @@ export default defineConfig({
 					{
 						text: "Network",
 						link: `/interview/network/${interviewNetworkItem[0].link}`,
+					},
+					{
+						text: "前端工程化",
+						link: `/interview/engineering/${interviewEngineeringItem[0].link}`,
 					},
 					// { text: "Vue", link: `/interview/vue/${interviewCssItem[0].link}` },
 					// { text: "React", link: `/interview/react/${interviewCssItem[0].link}` },
