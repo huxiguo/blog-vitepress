@@ -1,26 +1,27 @@
-import type { DefaultTheme } from "vitepress"
-import { Item } from "../type/type"
-import getSideBarItemByPath from "../utils/getSidebarByPath"
+import type { DefaultTheme } from 'vitepress'
+import { Item } from '../type/type'
+import getSideBarItemByPath from '../utils/getSidebarByPath'
 
 function getOtherSideBarItem(directory: string): Item[] {
 	return getSideBarItemByPath(directory)
 }
 
-const otherInterviewItem = getOtherSideBarItem("../../other/interview")
-const otherLiveItem = getOtherSideBarItem("../../other/live")
+const otherInterviewItem = getOtherSideBarItem('../../other/interview')
+const otherLiveItem = getOtherSideBarItem('../../other/live')
 
 export function sidebarOther(): DefaultTheme.SidebarItem[] {
 	return [
+		// * 不显示
+		// {
+		// 	text: "面试总结",
+		// 	collapsed: true,
+		// 	base: "/other/interview/",
+		// 	items: otherInterviewItem,
+		// },
 		{
-			text: "面试总结",
+			text: '生活',
 			collapsed: true,
-			base: "/other/interview/",
-			items: otherInterviewItem,
-		},
-		{
-			text: "生活",
-			collapsed: true,
-			base: "/other/live/",
+			base: '/other/live/',
 			items: otherLiveItem,
 		},
 	]
